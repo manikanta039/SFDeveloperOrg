@@ -1,0 +1,24 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="chartType" type="String" />
+	<ltng:require scripts="{!$Resource.ChartJs}" afterScriptsLoaded="{!c.generateChart}"/>
+    <div>
+        <lightning:select name="selectItem" label="Chart Type" onchange="{!changeChart}" value="{!v.chartType}">
+        	<option value = "pie">Pie Chart</option>
+        	<option value = "line">Line Chart</option>
+        	<option value = "bar">Bar Chart</option>
+    	</lightning:select>
+    </div>
+    <div class = "slds-grid slds-gutters">
+    	<div class = "slds-col slds-box ">
+			<canvas aura:id="piechart"  height = "250" width = "300"></canvas>
+    	</div>
+    
+    	<div class = "slds-col slds-box ">
+			<canvas aura:id="barchart" height = "250" width = "300"></canvas>
+        </div>
+        
+        <div class = "slds-col slds-box ">
+			<canvas aura:id="linechart" height = "250" width = "300"></canvas>
+        </div>
+    </div>
+</aura:component>

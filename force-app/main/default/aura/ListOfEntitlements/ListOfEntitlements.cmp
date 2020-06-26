@@ -1,0 +1,39 @@
+<aura:component controller="FetchContact">
+  <aura:attribute name="wrapper" type="FetchContact.wrapper" />
+  
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+  <br /> 
+    
+    <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered">
+        <thead>
+            <tr class="slds-line-height_reset">
+                <aura:iteration items="{!v.wrapper.LstColNames}" var="item">
+					<th class="" scope="col">
+        				<div class="slds-truncate" title="Opportunity Name">
+                            {!item}</div>
+      				</th>                
+                </aura:iteration>
+            </tr>
+        </thead>
+        <tbody>
+            <aura:iteration items="{!v.wrapper.LstAccounts}" var="item">
+                <tr class="slds-hint-parent">
+                    <aura:iteration items="{!v.wrapper.LstColNames}" var="i">
+                        <td>
+                        	<c:CellValue contact="{!item}" colName="{!i}"/>
+                        </td>
+                    </aura:iteration>
+                    <!--<td data-label="Account Name">
+                        <div class="slds-truncate" title="Cloudhub">{!item.Number_of_Contacts__c}</div>
+                    </td>
+                    <td data-label="Account Name">
+                        <div class="slds-truncate" title="Cloudhub">{!item.AccountNumber}</div>
+                    </td>
+                    <td data-label="Account Name">
+                        <div class="slds-truncate" title="Cloudhub">{!item.Name}</div>
+                    </td> -->
+                </tr>
+            </aura:iteration>
+        </tbody>
+    </table>
+</aura:component>

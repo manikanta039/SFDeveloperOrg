@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:attribute name="task" type="String[]" />
+    <div class="slds-text-heading_large">Todo App</div>
+    <c:TodoCreateTaskContainer tasklist="{!v.tasks}"/>
+    <c:TodoTaskContainer tasklist="{!v.tasks}" />
+</aura:component>

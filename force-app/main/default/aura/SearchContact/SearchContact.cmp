@@ -1,0 +1,112 @@
+<aura:component controller="FetchContact">
+    <aura:attribute name="contact" type="Contact" />
+    <aura:attribute name="showModal" type="Boolean" default="false" />
+    <div class="slds-grid slds-gutters slds-m-around_medium">
+        <div class="slds-col slds-size_3-of-12">
+            <lightning:input
+                             type="email"
+                             aura:id="comEmail"
+                             name="email3"
+                             placeholder="Search by contact's email..."
+                             label="Email"
+                             variant = "label-hidden"
+                             />
+        </div>
+        <div class="slds-col slds-size_2-of-12">
+            <lightning:button
+                              variant="brand"
+                              label="Load Contacts"
+                              title="Load Contacts"
+                              onclick="{!c.handleClick}"
+                              />
+        </div>
+        <div class="slds-col slds-size_5-of-12">
+            
+        </div>
+        <div class="slds-col slds-size_2-of-12">
+            <lightning:button 
+                              label="Invite a User" 
+                              iconName="utility:add" 
+                              iconPosition="left" 
+                              variant="brand" 
+                              onclick="{!c.showModal}"/>
+        </div>
+    </div>
+    
+    <aura:if isTrue="{!v.showModal}">
+        <section role="dialog" tabindex="-1"  aria-modal="true" class="slds-modal slds-fade-in-open" >
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close"
+                                          onclick="{! c.showModal }"
+                                          alternativeText="close"
+                                          variant="bare-inverse"
+                                          class="slds-modal__close"/>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Invite a User</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <form class="slds-form">
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning:input aura:id="contactform" label="First Name"
+                                                 name="firstname"
+                                                 value="{!v.newItem.fName}"
+                                                 required="true"/>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning:input aura:id="contactform" label="Last Name"
+                                                 name="lastname"
+                                                 value="{!v.newItem.lName}"
+                                                 required="true"/>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning:input aura:id="contactform" label="Work Email"
+                                                 name="email"
+                                                 value="{!v.newItem.email}"
+                                                 required="true"/>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning:select name="country" label="Country" required="true">
+                                    <option value="">choose one...</option>
+                                    <option value="1">India</option>
+                                    <option value="2">Nepal</option>
+                                    <option value="3">Sri Lanka</option>
+                                </lightning:select>
+                            </div>
+                        </div>
+                        <br/>
+                        <div>This person will become a member on your company account. Optionally, you may select responsibilities for them below.</div>
+                        <br/>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning:select name="select1" label="Responsibilities" required="false">
+                                    <option value="">choose one...</option>
+                                    <option value="1">one</option>
+                                    <option value="2">two</option>
+                                    <option value="3">three</option>
+                                </lightning:select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="neutral"
+                                      label="Cancel"
+                                      title="Cancel"
+                                      onclick="{! c.showModal }"/>
+                    <lightning:button variant="brand"
+                                      label="Send Invite"
+                                      title="OK"
+                                      onclick="{!c.submitDetails}"/>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    
+    <aura:if isTrue="true">
+        <c:ListOfEntitlements />
+    </aura:if>
+</aura:component>

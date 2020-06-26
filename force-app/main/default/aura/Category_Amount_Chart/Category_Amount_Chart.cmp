@@ -1,0 +1,9 @@
+<aura:component controller="Category_Amount_Controller" implements="flexipage:availableForAllPAgeTypes">
+    <ltng:require scripts="{!$Resource.ChartJs}" afterScriptsLoaded="{!c.generateChart}"/>
+    <div class = "slds-text-align_center slds-m-bottom_small" style="font-size: 16px !important; font-weight:bold;">
+        Category VS Amount
+    </div>
+    <div style = "height:300px">
+    <canvas aura:id="piechart" height = "50" width = "50"></canvas>
+    </div>
+</aura:component>

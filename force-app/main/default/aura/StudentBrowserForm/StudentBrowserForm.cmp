@@ -1,0 +1,28 @@
+<aura:component controller="StudentBrowserForm">
+    <aura:attribute name="firstName" type="String" default="Vini"/>
+    <aura:attribute name="lastName" type="String" default="Bhatti"/>
+    <aura:attribute name="instructors" type="User[]" />
+    <aura:attribute name="selectedInstructorId" type="Id" default=""/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <lightning:card title="Filter Students"
+                    iconName="utility:search">
+    <!--h1 class="slds-p-horizontal_small crazycomics">The form goes here</h1-->
+        <div class="container slds-p-horizontal_small">
+    Hello, {!v.firstName+ ' ' + v.lastName}
+    </div>
+        <lightning:layout>
+        <lightning:layoutItem padding="around-small">
+        	<lightning:select label="Select instructor"
+                               variant="label-hidden"
+                               name = "instructor"
+                               value="{!v.selectedInstructorId}">
+                <option value="">Choose one...</option>
+                <aura:iteration items="{!v.instructors}" var="inst">
+                	<option value="{!inst.id}">{!inst.Name}</option>
+                </aura:iteration>
+            </lightning:select>
+        </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:card>
+    
+</aura:component>

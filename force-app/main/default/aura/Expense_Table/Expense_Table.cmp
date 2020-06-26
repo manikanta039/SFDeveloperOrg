@@ -1,0 +1,129 @@
+<aura:component controller="Category_Amount_Controller" implements="flexipage:availableForAllPAgeTypes">
+    <aura:attribute name="expense" type="Object" />
+    <aura:attribute name="editExpense" type="Object" />
+    <aura:attribute name="editRecord" type="boolean" default="false" />
+    <aura:attribute name="currentList" type="Object" />
+    <aura:attribute name="pageNumber" type="Integer" default="1"/>
+    <aura:attribute name="maxPage" type="Integer" default="1"/>
+    <aura:attribute name="showModal" type="boolean" default="false" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="change" value="{!v.pageNumber}" action="{!c.renderPage}" />
+    
+    <aura:attribute name="options"
+                    type="List"
+                    default="[
+                               {'label' : 'ACCOUNT', 'value': 'ACCOUNT'},
+                               {'label' : 'CATEGORY', 'value': 'CATEGORY'},
+                               {'label' : 'DATE', 'value': 'DATE'},
+                               {'label' : 'EXPENSE', 'value': 'EXPENSE'},
+                               ]"/>
+    <aura:attribute name="selectedValues" type="List" default="Place"/>
+    <aura:attribute name="isOpen" type="boolean" default="false" />
+    
+    <aura:if isTrue="{!v.isOpen}">
+        <div role = "dialog" tabindex = "-1" aria-labelledby = "header99" class = "slds-modal slds-fade-in-open">
+            <div class = "slds-modal__container">
+                <div class = "slds-modal__header" style="font-weight:bold;color:#ebeef1; background-color:#165085;border:none;">
+                    <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.closeModel}">
+                        X
+                        <span class = "slds-assistive-text">close</span>
+                    </button>
+                    <h2 id = "header99" class = "slds-text-heading--medium">Manage Table Columns</h2>
+                </div>
+                <div class = "slds-modal__content slds-p-around--medium">
+                    <div class = "slds-p-around--medium">
+                        <lightning:checkboxGroup aura:id="mygroup"
+                                                 name="checkboxGroup"
+                                                 label="Manage column"
+                                                 options="{!v.options}"
+                                                 value="{!v.selectedValues}"/>
+                    </div>
+                </div>
+                <div class = "slds-modal__footer" style = "background-color : #ebeef1;" >
+                    <button class = "slds-button slds-button--neutral"  onclick = "{!c.closeModel}">Done</button>
+                </div>
+            </div>
+        </div>
+        <div class = "slds-backdrop slds-backdrop--open"></div>
+    </aura:if>
+    
+    <div class = "slds-m-around--medium">
+        <div class = "slds-clearfix slds-grid">
+            <div class = "slds-col slds-size_3-of-12 ">
+            	 <lightning:buttonIcon class="slds-float_left" variant="neutral" size="large" iconName="utility:add" onclick="{! c.openModal }" title="New Expense" alternativeText="New Expense" iconClass="dark"/>
+            </div>
+            <div class = "slds-float_right slds-col slds-size_6-of-12">
+            <c:Pagination currentPageNumber="{!v.pageNumber}" 
+                  maxPageNumber="{!v.maxPage}" />
+            </div>
+            <div class = "slds-col slds-size_3-of-12">
+                <lightning:buttonIcon class="slds-float_right" size="large" onclick="{!c.openModel}" iconName="utility:matrix" variant="neutral" title="Manage Table Columns" alternativeText="Settings" iconClass="dark"/>
+            </div>
+        </div>
+    </div>
+    
+    <div class = " slds-scrollable_x slds-p-right_medium slds-p-left_medium slds-p-top_medium slds-p-bottom_medium slds-theme_default " style="padding-top:1%;height:100%;" >
+        <Table class="slds-table slds-table_bordered slds-table_col-bordered slds-table_cell-buffer">
+            <thead >
+                <tr class="slds-text-title_caps">
+                    <th  style="font-weight:bold;color:#ebeef1; background-color:#165085;border:none;" scope="col">Place</th>
+                        <th style="font-weight:bold;color:#ebeef1; background-color:#165085;border:none;" scope="col">Amount</th>
+                    <c:auraIfContains list="{!v.selectedValues}"  element="ACCOUNT"> 
+                        <th style="font-weight:bold;color:#ebeef1; background-color:#165085;border:none;" scope="col">Account</th>
+                    </c:auraIfContains>
+                    <c:auraIfContains list="{!v.selectedValues}"  element="CATEGORY"> 
+                        <th style="font-weight:bold;color:#ebeef1; background-color:#165085;border:none;" scope="col">Category</th>
+                    </c:auraIfContains>
+                    <c:auraIfContains list="{!v.selectedValues}"  element="DATE"> 
+                        <th style="font-weight:bold;color:#ebeef1; background-color:#165085;border:none;" scope="col">Date</th>
+                    </c:auraIfContains>
+                    <c:auraIfContains list="{!v.selectedValues}"  element="EXPENSE"> 
+                        <th style="font-weight:bold;color:#ebeef1; background-color:#165085;border:none;" scope="col">Expense</th>
+                    </c:auraIfContains>
+                    <th class = "slds-align_absolute-center" style="font-weight:bold;color:#ebeef1; background-color:#165085;border:none;" scope="col">More</th>
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.currentList}" var="exp">
+                    <tr class = "{!exp.Expense__c == true ? 'etrue': 'efalse'}">
+                        <td>{!exp.Place__c}</td>
+                            <td>{!exp.Amount__c}</td>
+                        <c:auraIfContains list="{!v.selectedValues}"  element="ACCOUNT"> 
+                            <td>{!exp.Account__c}</td>
+                        </c:auraIfContains>
+                        <c:auraIfContains list="{!v.selectedValues}"  element="CATEGORY"> 
+                            <td>{!exp.Category__c}</td>
+                        </c:auraIfContains>
+                        <c:auraIfContains list="{!v.selectedValues}"  element="DATE"> 
+                            <td>{!exp.Date__c}</td>
+                        </c:auraIfContains>
+                        <c:auraIfContains list="{!v.selectedValues}"  element="EXPENSE"> 
+                            <td>{!exp.Expense__c}</td>
+                        </c:auraIfContains>
+                        <td><div class = "slds-grid ">
+                            <div class = "slds-col slds-button slds-button_icon  slds-align_absolute-center">
+                                <lightning:buttonIcon iconName="utility:delete" value="{!exp.Id}" variant="bare" onclick="{!c.deleteRecord}"/>    
+                            </div>
+                            <div  class = "slds-col slds-button slds-button_icon  slds-align_absolute-center">
+                                <lightning:buttonIcon iconName="utility:edit" value="{!exp}" variant="bare" onclick="{!c.editRecord}"/>
+                            </div>
+                            </div>
+                        </td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </Table>
+    </div>
+    <aura:if isTrue="{!and(v.showModal, v.editRecord)}">
+        <c:New_Expense isOpen="{!v.showModal}" newExpense="{!v.editExpense}" flag="{!v.editRecord}"/>
+        <aura:set attribute="else">
+            <c:New_Expense isOpen="{!v.showModal}" flag="{!v.editRecord}"/>
+        </aura:set>
+        
+    </aura:if>
+    <div class = "slds-m-around--medium">
+    <c:Pagination currentPageNumber="{!v.pageNumber}" 
+                  maxPageNumber="{!v.maxPage}" />
+    </div>
+</aura:component>

@@ -1,0 +1,25 @@
+<aura:component controller="RegionalChartApexController" implements="flexipage:availableForAllPAgeTypes">
+    <ltng:require scripts="{!$Resource.ChartJs}" afterScriptsLoaded="{!c.generateChart}"/>
+    <div class = "slds-grid slds-gutters slds-p-left_xx-large slds-p-right_medium">
+        <div class = "slds-col slds-box  slds-size_1-of-3 ">
+            <canvas aura:id="piechart" height = "50" width = "50"></canvas>
+        </div>
+        <div class = "slds-col slds-box slds-size_1-of-3 ">
+            <canvas aura:id="barchart" height = "50" width = "50"></canvas>            
+        </div>
+        <div class = "slds-col slds-box slds-size_1-of-3 ">
+            <canvas aura:id="linechart" height = "250" width = "300"></canvas>
+        </div>
+    </div> 
+    <div class = "slds-grid slds-gutters slds-p-left_xx-large slds-p-right_medium">
+        <div class = "slds-col slds-box  slds-size_1-of-3 ">
+            <canvas aura:id="piechart1" height = "50" width = "50"></canvas>
+        </div>
+        <div class = "slds-col slds-box slds-size_1-of-3 ">
+                       
+        </div>
+        <div class = "slds-col slds-box slds-size_1-of-3 ">
+            
+        </div>
+    </div>
+</aura:component>

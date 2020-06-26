@@ -1,0 +1,56 @@
+<aura:component controller="Category_Amount_Controller" implements="flexipage:availableForAllPAgeTypes">
+    <ltng:require scripts="{!$Resource.ChartJs}" afterScriptsLoaded="{!c.doInit}"/>
+    <aura:attribute name="month" type="String" />
+    <aura:attribute name="selectedMonth" type="string" default="January"/>
+    <aura:attribute name="selectedMonth1" type="string" default="January"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+     <aura:attribute name="chartobj" type="Object" access="public"/>
+
+    <div class = "slds-m-bottom_small">
+        <table>
+            <tr>
+                <td>
+                    <div class = "slds-text-align_center slds-p-top_medium" style="font-size: 16px !important; font-weight:bold;">
+                        Date Vs Amount
+                    </div>
+                </td>
+                <td>
+                    <div class = "slds-text-align_right" style="color:#FF6384;">
+                    <lightning:select name="selectItem" 
+                                      label="Select an item" 
+                                      variant="label-hidden" 
+                                      onchange="{!c.doSomething}"
+                                      value="{!v.selectedMonth}"
+                                      >
+                        
+                        <aura:iteration items="{!v.month}" var="mon">
+                        <option value = "{!mon}">{!mon}</option>
+                        </aura:iteration>
+                    </lightning:select>
+                        </div>
+                </td>
+                <td>
+                    <div class = "slds-text-align_center  slds-p-top_medium" style="font-size: 16px !important; font-weight:bold;">Vs</div>
+                </td>
+                <td>
+                    <div class = "slds-text-align_left" style="color:#9966ff;">
+                    <lightning:select name="selectItem" 
+                                      label="Select an item" 
+                                      variant="label-hidden" 
+                                      onchange="{!c.doSomething}"
+                                      value="{!v.selectedMonth1}"
+                                      >
+                       
+                        <aura:iteration items="{!v.month}" var="mon">
+                        <option value = "{!mon}">{!mon}</option>
+                        </aura:iteration>
+                    </lightning:select>
+                        </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="chartDiv" style = "height:300px" >
+        <canvas aura:id="piechart" height = "50" width = "50"></canvas>
+    </div>
+</aura:component>

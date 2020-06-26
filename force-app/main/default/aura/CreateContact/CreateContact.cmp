@@ -1,0 +1,18 @@
+<aura:component controller="ContactsController">
+    <aura:attribute name="recordId" type="string" />
+    <aura:attribute name="newContact" type="Contact" default=" {'sObjectType':'Contact',
+                                                                'LastName':'',
+                                                                'Email':'',
+                                                                'Phone':''} " />
+	<lightning:card title="Create Contact">
+        <div class="slds-p-around_small">
+        	<lightning:input name="input1" label="Last Name" value="{!v.newContact.LastName}"/>
+            <lightning:input name="input1" label="Email" value="{!v.newContact.Email}"/>
+            <lightning:input name="input1" label="Phone" value="{!v.newContact.Phone}"/>
+        </div>
+       
+        <aura:set attribute="footer">
+            <lightning:button label="Create Contact" variant="brand" onclick="{!c.createContacts}"/>
+        </aura:set>
+    </lightning:card>
+</aura:component>

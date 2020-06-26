@@ -1,0 +1,100 @@
+<aura:component controller="Category_Amount_Controller" >
+    <aura:attribute name="flag" type="boolean" />
+    <aura:attribute name="isOpen" type="boolean" />
+    <aura:attribute name="newExpense" type="Expense__c"
+                    default="{ 'sobjectType': 'Expense__c',
+                             'Place__c': '',
+                             'Amount__c': 0,
+                             'Category__c': 'SHOPPING',
+                             'Date__c': '',
+                             'Account__c' : 'ICICI',
+                             'Expense__c': true }"/>
+    
+    
+    <aura:if isTrue="{!v.isOpen}">
+        <div role = "dialog" tabindex = "-1" aria-labelledby = "header99" class = "slds-modal slds-fade-in-open">
+            <div class = "slds-modal__container">
+                <div class = "slds-modal__header" style="font-weight:bold;color:#ebeef1; background-color:#165085;border:none;">
+                    <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.closeModel}">
+                        X
+                        <span class = "slds-assistive-text">close</span>
+                    </button>               
+                    
+                    <aura:if isTrue="{!v.flag}">
+                        <h2 id = "header99" class = "slds-text-heading--medium">Edit Expense</h2>
+                        <aura:set attribute="else">
+                            <h2 id = "header99" class = "slds-text-heading--medium">New Expense</h2>
+                        </aura:set>
+                        
+                    </aura:if>
+                    
+                </div>
+                <div class = "slds-modal__content slds-p-around--medium">
+                    <div class = "slds-p-around--medium" aria-labelledby="newexpenseform">
+                        <form class="slds-form--stacked"> 
+                            <lightning:input aura:id="place" label="Place"
+                                             name="Place"
+                                             value="{!v.newExpense.Place__c}" /> 
+                            
+                            <lightning:input type="number" aura:id="amount" label="Amount"
+                                             name="amount"
+                                             min="0.1"
+                                             formatter="currency"
+                                             step="0.01"
+                                             value="{!v.newExpense.Amount__c}"/>
+                            
+                            <lightning:input type="date" aura:id="date" label="Date" 
+                                             name="date"
+                                             value="{!v.newExpense.Date__c}"/>
+                            
+                            <lightning:select name="Categoy" label="Category" 
+                                              aura:id="category"                                           
+                                              value="{!v.newExpense.Category__c}">
+                                <option value="SHOPPING">SHOPPING</option>
+                                <option value="FOOD &amp; DRINKS">FOOD &amp; DRINKS</option>                           
+                                <option value="UNKNOWN">UNKNOWN</option>
+                                <option value="ATM WITHDRAW">ATM WITHDRAW</option>
+                                <option value="BILLS">BILLS</option>
+                                <option value="TRAVEL">TRAVEL</option>
+                                <option value="FUEL">FUEL</option>
+                                <option value="HEALTH">HEALTH</option>
+                                <option value="GROCERIES">GROCERIES</option>
+                            </lightning:select>
+                            
+                            <lightning:select name="Account" label="Account" 
+                                              aura:id="account"                                           
+                                              value="{!v.newExpense.Account__c}">
+                                <option value="ICICI">ICICI</option>
+                                <option value="HDFC">HDFC</option>
+                                <option value="SBI">SBI</option>
+                                <option value="PAYTM">PAYTM</option>
+                                <option value="FreeCharge">FreeCharge</option>
+                                <option value="Amazon Pay">Amazon Pay</option>
+                            </lightning:select>
+                            
+                            <lightning:input type="toggle" 
+                                             label="Expense" 
+                                             name="togglevalue" 
+                                             aura:id="expense"
+                                             checked="{!v.newExpense.Expense__c}"
+                                             value="{!v.newExpense.Expense__c}"/>
+                            
+                        </form>
+                    </div>
+                </div>
+                <aura:if isTrue="{!v.flag}">
+                    <div class = "slds-modal__footer" style = "background-color : #ebeef1;" >
+                        <button class = "slds-button slds-button--neutral"  onclick = "{!c.update}">Update</button>
+                    </div>
+                    <aura:set attribute="else">
+                        <div class = "slds-modal__footer" style = "background-color : #ebeef1;" >
+                            <button class = "slds-button slds-button--neutral"  onclick = "{!c.save}">Save</button>
+                        </div>
+                    </aura:set>
+                    
+                </aura:if>          
+            </div>
+        </div>
+        <div class = "slds-backdrop slds-backdrop--open"></div>
+    </aura:if>
+</aura:component>

@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPAgeTypes">
+    <aura:attribute name="currentPageNumber" type="Integer" required="true" />
+    <aura:attribute name="maxPageNumber" type="Integer" required="true" />
+    
+    <div class = "slds-button-group slds-align_absolute-center" role = "group">
+    	<button onclick = "{!c.firstPage}" class = "slds-button slds-button_neutral">First</button>
+        <button onclick = "{!c.prevPage}" class = "slds-button slds-button_neutral">Prev</button>
+        <button class="slds-button slds-button_neutral">
+            {!v.currentPageNumber} / {!v.maxPageNumber}
+        </button>
+        <button onclick = "{!c.nextPage}" class = "slds-button slds-button_neutral">Next</button>
+        <button onclick = "{!c.lastPage}" class = "slds-button slds-button_neutral">Last</button>   
+    </div>
+    
+</aura:component>

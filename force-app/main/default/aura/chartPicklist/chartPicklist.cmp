@@ -1,0 +1,9 @@
+<aura:component >
+	 <div>
+        <lightning:select name="selectItem" label="Chart Type" onchange="{!changeChart}">
+        	<option value = "1">Pie Chart</option>
+        	<option value = "2">Line Chart</option>
+        	<option value = "3">Bar Chart</option>
+    	</lightning:select>
+    </div>
+</aura:component>

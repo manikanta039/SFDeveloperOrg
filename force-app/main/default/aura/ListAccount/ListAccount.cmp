@@ -1,0 +1,9 @@
+<aura:component controller="FetchAccounts">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="accountsList" type="List" />
+    <p>List of accounts</p>
+    <aura:iteration items="{!v.accountsList}" var="acc">
+        {!acc.Name}<br/>
+        <p>hello</p>
+    </aura:iteration>
+</aura:component>

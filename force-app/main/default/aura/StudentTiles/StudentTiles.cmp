@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="students" type="Contact[]"/>
+    <aura:handler name="onStudentSelected" event="c.Studentselected" action="{!c.handleBubbling}" />
+    <lightning:layout multipleRows="true">
+    	<aura:iteration items="{!v.students}" var="student">
+            <lightning:layoutItem padding="around-small" size="6" smallDeviceSize="6" mediumDeviceSize="4" largeDeviceSize="2" >
+                 <c:StudentTitle Student="{!student}"/>
+            </lightning:layoutItem>
+        </aura:iteration>
+    </lightning:layout>
+</aura:component>

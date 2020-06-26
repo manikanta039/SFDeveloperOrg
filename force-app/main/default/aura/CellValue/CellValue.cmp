@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:attribute name="contact" type="Contact" />
+    <aura:attribute name="colName" type="String" default="111"/>
+    
+    <aura:attribute name="value" type="String" default="abc"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    {!v.value}
+</aura:component>

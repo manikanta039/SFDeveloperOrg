@@ -1,0 +1,25 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="ContactsController">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <aura:attribute name="contacts" type="List"/>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-3 slds-p-around_small">
+            <c:CreateContact recordId="{!v.recordId}"/>
+        </div>
+   <div class="slds-grid slds-wrap slds-size_2-of-3 slds-scrollable_y">
+    <aura:iteration items="{!v.contacts}" var="contact">
+        <Div class="slds-col slds-size_1-of-3 slds-p-around_small" >
+            <lightning:card footer="{!contact.Id}" title="{!contact.LastName}" iconName="standard:contact">
+                <aura:set attribute="actions">
+                    <lightning:buttonIcon iconName="utility:news" size="small" name="{!contact.Id}" onclick="{!c.goToContact}"/>
+                    <lightning:buttonIcon iconName="utility:edit" size="small" name="{!contact.Id}" onclick="{!c.editContact}"/>
+                </aura:set>
+                <p class="slds-p-horizontal_small">
+                    Email : {!contact.Email}
+                </p>
+            </lightning:card>
+        </Div>
+    </aura:iteration>
+    </div>
+        </div>
+</aura:component>

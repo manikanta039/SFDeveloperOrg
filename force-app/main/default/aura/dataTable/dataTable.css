@@ -1,0 +1,13 @@
+.THIS {
+}
+.THIS .table-test thead th span {
+background-color: white;
+    border-style: dotted;
+    border-width: 0px;
+color: black
+}
+.THIS .table-body tbody tr {
+    background-color: white;
+    border-style: none;
+    border-width: 0px;
+}

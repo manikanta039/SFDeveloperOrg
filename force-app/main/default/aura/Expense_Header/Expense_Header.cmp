@@ -1,0 +1,16 @@
+<aura:component >
+    <aura:attribute name="header" type="String" default="{!$Label.c.Pardot_Production_Base_Url1}" />
+	    <div class="slds-page-header" style="font-weight:bold;color:#ebeef1; background-color:#165085;border:none;">
+        <div class="slds-media">
+            <div class="slds-media__figure">
+                <span class="slds-icon_container slds-icon-standard-opportunity" title="Description of icon when needed">
+                   <lightning:icon iconName="standard:calibration"/>
+                </span>
+            </div>
+            <div class="slds-media__body">
+                <h1 class="slds-page-header__title slds-truncate slds-align-middle" >Expenses</h1>
+                <p class="slds-text-body_small slds-line-height_reset">{!v.header}</p>
+            </div>
+        </div>
+    </div>
+</aura:component>

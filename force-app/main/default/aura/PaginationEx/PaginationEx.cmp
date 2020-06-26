@@ -1,0 +1,86 @@
+<aura:component controller="ContactControllerDB">
+	<!--Declare Event Handlers--> 
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler event="force:refreshView" action="{!c.doInit}" />
+    
+    <!--Declare Attributes-->
+    <aura:attribute name="orgContactList" type="Object" />
+    <aura:attribute name="contactList" type="Object" /> 
+    <aura:attribute name="isSelectAll" type="boolean" default="false"/>
+    <aura:attribute name="valueChanged" type="boolean" default="false"/>
+    <aura:attribute name="selectedContact" type="list" />  
+    <aura:attribute name="submissionList" type="list" /> 
+    
+    <aura:attribute name="startPage" type="Integer" />
+    <aura:attribute name="endPage" type="Integer"/>
+    <aura:attribute name="totalRecords" type="Integer"/>
+    <aura:attribute name="pageSize" type="Integer" default="4"/>
+    <aura:attribute name="PaginationListrows" type="Object"/>
+    
+    <div class="slds-m-around_xx-large">
+        <h1 class="slds-text-heading--medium">Contacts  {!v.valueChanged  == true ? '*' : ''} </h1>
+        <br/>
+        <!--Contact List Table-->
+        <table class="slds-table slds-table--bordered slds-table--cell-buffer" role="grid">      
+            <thead>  
+                <tr class="slds-text-title--caps">
+                    <th scope="col">
+                        <div class="slds-truncate" title="Name">Invoice Email</div>
+                    </th>
+                    <th scope="col">
+                        <div class="slds-truncate" title="Name">Name</div>
+                    </th>
+                    
+                    <th scope="col">
+                        <div class="slds-truncate" title="Email">Email</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>        
+                <aura:iteration items="{!v.PaginationListrows}" var="con"  indexVar="index">
+                    <tr >
+                        <th>
+                            <label class="slds-checkbox">
+                                
+                                <ui:inputCheckbox aura:id="checkContact"
+                                                  value="{!con.Invoice_Email__c}" 
+                                                  text="{!con.Id + ','+index }"
+                                                  change="{!c.testing}"
+                                                  />
+                                
+                                <span class="slds-checkbox--faux" />
+                                <span class="slds-form-element__label"></span>
+                            </label>
+                        </th>
+                        <th scope="row">
+                            <div class="slds-truncate" title="{!con.Name}">{!con.Name}</div>
+                        </th>
+                        
+                        <td>
+                            <div class="slds-truncate" title="{!con.Email}">{!con.Email}</div>
+                        </td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+        <footer class="slds-card__footer">
+            <lightning:buttonGroup>
+                <lightning:button label="Previous" 
+                                  disabled="{!v.startPage == 0}"  
+                                  onclick="{!c.previous}" 
+                                  variant="brand"
+                                  iconName='utility:back'/>
+                <lightning:button label="Next" 
+                                  disabled="{!v.endPage + 1 >= v.totalRecords}" 
+                                  onclick="{!c.next}" 
+                                  variant="brand"
+                                  iconPosition="right"
+                                  iconName='utility:forward'/>
+            </lightning:buttonGroup>
+        </footer>
+        <div>
+            <br/>
+            <lightning:button label="Submit" disabled="{!!v.valueChanged}" class="slds-button_brand" onclick="{!c.handleSelectedContacts }"  />
+        </div>
+    </div>
+</aura:component>

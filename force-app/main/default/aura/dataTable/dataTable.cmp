@@ -1,0 +1,51 @@
+<aura:component controller="AccountController">
+    <aura:attribute name="data" type="Account[]" />
+    <aura:attribute name="columns" type="List" />
+    <aura:attribute name="draftValues" type="Object" />
+    <aura:attribute name="searchKeyword" type="String" />
+    <aura:attribute name="TotalNumberOfRecord" type="integer" default="0" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:attribute name="header" type="String" default="{!$Label.c.Pardot_Production_Base_Url1}" />
+	    <div class="slds-page-header" style="font-weight:bold;color:#ebeef1; background-color:#165085;border:none;">
+        <div class="slds-media">
+            <div class="slds-media__figure">
+                <span class="slds-icon_container slds-icon-standard-opportunity" title="Description of icon when needed">
+                   <lightning:icon iconName="standard:account"/>
+                </span>
+            </div>
+            <div class="slds-media__body">
+                <h1 class="slds-page-header__title slds-truncate slds-align-middle slds-p-top_xx-small" >Accounts</h1>
+                <!--p class="slds-text-body_small slds-line-height_reset">{!v.header}</p-->
+            </div>
+        </div>
+    </div>
+    <lightning:layout horizontalAlign = "right" verticalAlign ="end">
+        <lightning:layoutItem size="3" padding="around-small">
+            <lightning:input value="{!v.searchKeyword}"
+                             placeholder="search Accounts.."
+                             type="search"
+                             onchange="{!c.Search}"
+                             aura:id="searchField"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="1" padding="around-small">
+            <!--lightning:button onclick="{!c.Search}"
+                              variant="brand"
+                              label="Search"
+                              iconName="utility:search"/-->
+            <lightning:badge label="{!v.TotalNumberOfRecord}" class ="slds-p-around_x-small"/>
+        </lightning:layoutItem>
+    </lightning:layout>				
+    <div class="slds-p-around_medium" id="dt1">
+    <lightning:datatable aura:id="acctTable"
+                         class="table-test table-body"
+                         keyField="Id"
+                         data="{!v.data}"
+                         columns="{!v.columns}"
+                         editable="true"
+                         iconName="standard:opportunity"
+                         hideCheckboxColumn="true"
+                         onrowaction="{!c.rowAction}"
+                         draftValues="{!v.draftValues}"
+                         onsave="{!c.handleSave }"/>
+        </div>
+</aura:component>

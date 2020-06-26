@@ -1,0 +1,21 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:handler name="init" value="this" action="{!c.doInit}" />
+    <aura:attribute name="button"  type="Boolean"/>
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="dupRecId" type="Id" />
+    <aura:attribute name="displayLoader" type="Boolean" default="false"/>
+    
+    <aura:registerEvent name="passRecordId" type="c:passRecId" />
+    <div class="slds-align_absolute-center">
+    	<lightning:button variant="brand" label="Fetch Record ID" onclick="{!c.myAction}"/>
+    </div>
+    <p>Record Id {!v.dupRecId}</p>
+    <div>
+        <aura:if isTrue="{!v.displayLoader}">
+        <lightning:spinner alternativeTest="Loading..." size="small" />
+        </aura:if>
+    </div>
+    
+    <c:ChildButton aura:id="childComponent"/>
+    <c:ChildButton aura:id="childComponent1"/>
+</aura:component>

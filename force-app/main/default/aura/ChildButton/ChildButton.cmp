@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="recId" type="Id" />
+    <aura:handler  event="c:passRecId" action="{!c.setRec}"/>
+	<p>Hello {!v.recId}</p>
+    <aura:attribute name="param1" type="String" default="Abc" />
+    
+    <aura:method name="sampleMethod" action="{!c.callAction}">
+        <aura:attribute name="recordsId" type="Id" />  
+    </aura:method>
+    
+    <p>Hey {!v.param1}</p>
+</aura:component>

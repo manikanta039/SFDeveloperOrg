@@ -1,0 +1,20 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId">
+    <aura:attribute name="objectField" type="String" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="passThroughValue" type="String"/>
+    
+    <aura:attribute name="record" type="Object"/>
+    <aura:attribute name="simpleRecord" type="Object"/>
+    <aura:attribute name="recordError" type="String"/> 
+        
+    <force:recordData aura:id="recordLoader"
+      recordId="{!v.recordId}"
+      targetRecord="{!v.record}"
+      targetFields="{!v.simpleRecord}"
+      targetError="{!v.recordError}"
+      recordUpdated="{!c.init}"
+      layoutType="FULL"
+      />
+    
+	hello {!v.passThroughValue}
+</aura:component>

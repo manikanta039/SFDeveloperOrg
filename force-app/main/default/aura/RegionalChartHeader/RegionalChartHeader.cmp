@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    <div class="slds-page-header">
+        <!-- LAYOUT GRID -->
+        <div class="slds-grid slds-p-left_medium">
+            <!-- GRID COL -->
+            <div class="slds-col slds-has-flexi-truncate">
+                <!-- HEADING AREA -->
+                <p class="slds-text-title--caps slds-line-height--reset">Regionwise </p>
+                <h1 class="slds-page-header__title slds-m-right--small slds-align-middle slds-truncate" title="My Contacts">Customer Data</h1>
+                <!-- / HEADING AREA -->
+            </div>    
+        </div>  
+    </div>   
+</aura:component>

@@ -1,0 +1,15 @@
+.THIS .innertile{
+    position: relative;
+    height: 15vh;
+    width:15vh;
+    background: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.THIS .lower-third{
+    background: #c0c0c0;
+    position: absolute;
+  	bottom: 0px;
+    width:15vh;
+    opacity: 0.8;
+}
