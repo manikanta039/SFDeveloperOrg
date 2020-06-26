@@ -1,12 +1,12 @@
-import { LightningElement, wire, track } from 'lwc';
+import { LightningElement, wire } from 'lwc';
 import {refreshApex} from '@salesforce/apex'; 
 import getAccounts from '@salesforce/apex/Accounts_Controller.getAccounts';
 import getSearchedContacts from '@salesforce/apex/Accounts_Controller.getSearchedContacts';
 
 export default class ListOfAccounts extends LightningElement {
     pageSize = 6;
-    @track pageList = [];
-    @track orginalData;
+    pageList = [];
+    orginalData;
     startPage;
     endPage;
     totalNoOfRecs;
