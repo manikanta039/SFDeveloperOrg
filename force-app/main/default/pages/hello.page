@@ -1,0 +1,12 @@
+<apex:page sidebar="false" showHeader="false">
+    <h1>Hello</h1>
+    <apex:pageBlock title="A Block Title">
+    	<apex:pageBlockSection title="A Section Title">
+        	Hello This is page section. 
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection title="A New Section">
+        	Hello This is  new page section. 
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

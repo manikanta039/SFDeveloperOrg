@@ -1,0 +1,31 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2020-01-16T06:40:45.000Z",
+      "fileName": "dashboards/GlobalSalesDashboards",
+      "fullName": "GlobalSalesDashboards",
+      "id": "00l6F000002KNJUQA4",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2020-01-16T06:40:45.000Z",
+      "manageableState": "unmanaged",
+      "type": "DashboardFolder"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-11-26T11:46:57.000Z",
+      "fileName": "dashboards/Expenses",
+      "fullName": "Expenses",
+      "id": "00l6F000002KLC6QAO",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-11-26T11:46:57.000Z",
+      "manageableState": "unmanaged",
+      "type": "DashboardFolder"
+    }
+  ]
+}

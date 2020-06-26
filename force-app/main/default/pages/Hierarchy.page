@@ -1,0 +1,37 @@
+<apex:page controller="HierarchyController" showHeader="false" sidebar="false" lightningStylesheets="true">
+    <apex:slds />
+    <title >Hierarchical Structure</title>
+    <div class= "slds-page-header slds-align_absolute-center slds-theme_info">
+        <h1 class = "slds-page-header__title">
+            Hierarchical Structure
+        </h1>
+    </div><br/>
+    <div Class="slds-align_absolute-center">
+        <table Class="slds-align_absolute-center">
+            <tr>
+                <td>
+                    <ul class="slds-list-vertical slds-list--dotted">
+                        <li class="slds-list-item">
+                            <strong><apex:outputLink value="/{!place.ID}">{!place.Name}</apex:outputLink></strong>
+                        </li>
+                        <ul class="slds-list-vertical slds-is-nested slds-list--dotted">     
+                        <apex:repeat value="{!mainplace}" var="p">         
+                            <li calss="slds-list-item"><strong><apex:outputLink value="/{!p.parent.ID}">{!p.parent.Name}</apex:outputLink></strong></li> 
+                                 <ul class="slds-list-vertical slds-is-nested slds-list--dotted">
+                                     <apex:repeat value="{!p.child}" var="ch">
+                                         <li calss="slds-list-item"><strong><apex:outputLink value="/{!ch.ID}">{!ch.Name}</apex:outputLink></strong></li>
+                                         <ul class="slds-list-vertical slds-is-nested slds-list--dotted">
+                                             <apex:repeat value="{!p.littleChild}" var="ch1">
+                                                 <li calss="slds-list-item"><strong><apex:outputLink value="/{!ch1.ID}">{!ch1.Name}</apex:outputLink></strong></li>
+                                     		 </apex:repeat> 
+                                         </ul>
+                                     </apex:repeat>                            
+                                 </ul>
+                        </apex:repeat>                     
+                        </ul>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</apex:page>

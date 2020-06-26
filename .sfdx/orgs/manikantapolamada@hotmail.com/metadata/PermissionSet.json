@@ -1,0 +1,31 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-03-10T19:10:59.000Z",
+      "fileName": "permissionsets/ebikes.permissionset",
+      "fullName": "ebikes",
+      "id": "0PS6F0000049BfhWAE",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-08-28T04:01:31.000Z",
+      "manageableState": "unmanaged",
+      "type": "PermissionSet"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-10-29T19:05:59.000Z",
+      "fileName": "permissionsets/new_salesforce_mobile.permissionset",
+      "fullName": "new_salesforce_mobile",
+      "id": "0PS6F000003p9CZWAY",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-10-29T19:07:13.000Z",
+      "manageableState": "unmanaged",
+      "type": "PermissionSet"
+    }
+  ]
+}

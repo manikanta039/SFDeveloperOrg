@@ -1,0 +1,125 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:30:49.000Z",
+      "fileName": "moderation/Case Creation Demo.Flag_banned.rule",
+      "fullName": "Case Creation Demo.Flag_banned",
+      "id": "0LJ6F000000PVAZWA4",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:30:49.000Z",
+      "type": "ModerationRule"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:30:50.000Z",
+      "fileName": "moderation/Case Creation Demo.Review_the_first_post.rule",
+      "fullName": "Case Creation Demo.Review_the_first_post",
+      "id": "0LJ6F000000PVAcWAO",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:30:50.000Z",
+      "type": "ModerationRule"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:04:58.000Z",
+      "fileName": "moderation/Case Creation.Freeze_for_frequent_posting.rule",
+      "fullName": "Case Creation.Freeze_for_frequent_posting",
+      "id": "0LJ6F000000PVAVWA4",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:04:58.000Z",
+      "type": "ModerationRule"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:30:50.000Z",
+      "fileName": "moderation/Case Creation Demo.Freeze_for_frequent_posting.rule",
+      "fullName": "Case Creation Demo.Freeze_for_frequent_posting",
+      "id": "0LJ6F000000PVAaWAO",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:30:50.000Z",
+      "type": "ModerationRule"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:04:58.000Z",
+      "fileName": "moderation/Case Creation.Flag_banned.rule",
+      "fullName": "Case Creation.Flag_banned",
+      "id": "0LJ6F000000PVAUWA4",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:04:58.000Z",
+      "type": "ModerationRule"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:04:58.000Z",
+      "fileName": "moderation/Case Creation.Review_the_first_post.rule",
+      "fullName": "Case Creation.Review_the_first_post",
+      "id": "0LJ6F000000PVAXWA4",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:04:58.000Z",
+      "type": "ModerationRule"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:04:58.000Z",
+      "fileName": "moderation/Case Creation.Block_banned_keywords.rule",
+      "fullName": "Case Creation.Block_banned_keywords",
+      "id": "0LJ6F000000PVATWA4",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:04:58.000Z",
+      "type": "ModerationRule"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:30:49.000Z",
+      "fileName": "moderation/Case Creation Demo.Block_banned_keywords.rule",
+      "fullName": "Case Creation Demo.Block_banned_keywords",
+      "id": "0LJ6F000000PVAYWA4",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:30:49.000Z",
+      "type": "ModerationRule"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:04:58.000Z",
+      "fileName": "moderation/Case Creation.Replace_banned.rule",
+      "fullName": "Case Creation.Replace_banned",
+      "id": "0LJ6F000000PVAWWA4",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:04:58.000Z",
+      "type": "ModerationRule"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:30:50.000Z",
+      "fileName": "moderation/Case Creation Demo.Replace_banned.rule",
+      "fullName": "Case Creation Demo.Replace_banned",
+      "id": "0LJ6F000000PVAbWAO",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:30:50.000Z",
+      "type": "ModerationRule"
+    }
+  ]
+}

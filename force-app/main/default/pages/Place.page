@@ -1,0 +1,33 @@
+<apex:page controller="PlaceController" showHeader="false" sidebar="false">
+	<apex:slds />
+    <head>
+    	<title>Hierarchical Structure</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <style>
+        p{
+            font_weight: 900;
+            }
+        </style>
+    </head>
+    
+    <div class = "slds-page-header slds-align_absolute-center slds-theme_info">
+        <h1 class = "slds-page-header__title">
+            Hierarchical Structure of Places
+        </h1>
+    </div>
+    <br/>
+    <apex:repeat value="{!MainPlace}" var="p">
+        {!p.country.Name}<br/>
+        <apex:repeat value="{!p.wrapper2}" var="s">
+        &emsp;{!s.state.Name}<br/>
+            <apex:repeat value="{!s.distCities}" var="d">
+            &emsp;&emsp;{!d.district.Name}<br/>
+                <apex:repeat value="{!d.cityList}" var="c">
+                &emsp;&emsp;&emsp;{!c.Name}<br/>
+                </apex:repeat>
+                
+            </apex:repeat>
+        </apex:repeat>
+    </apex:repeat>
+</apex:page>

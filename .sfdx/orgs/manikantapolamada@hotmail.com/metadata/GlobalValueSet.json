@@ -1,0 +1,31 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2017-04-23T05:23:03.000Z",
+      "fileName": "globalValueSets/Plans.globalValueSet",
+      "fullName": "Plans",
+      "id": "0Nt6F0000004FEjSAM",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2017-04-23T05:23:03.000Z",
+      "manageableState": "unmanaged",
+      "type": "GlobalValueSet"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-03-22T11:14:47.000Z",
+      "fileName": "globalValueSets/Cat_Breed.globalValueSet",
+      "fullName": "Cat_Breed",
+      "id": "0Nt6F000000fyIqSAI",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-03-22T11:14:47.000Z",
+      "manageableState": "unmanaged",
+      "type": "GlobalValueSet"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:30:48.000Z",
+      "fileName": "moderation/Case Creation Demo.Banned.keywords",
+      "fullName": "Case Creation Demo.Banned",
+      "id": "0LM6F000000ThJzWAK",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:30:48.000Z",
+      "type": "KeywordList"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:04:56.000Z",
+      "fileName": "moderation/Case Creation.Banned.keywords",
+      "fullName": "Case Creation.Banned",
+      "id": "0LM6F000000ThJuWAK",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:04:56.000Z",
+      "type": "KeywordList"
+    }
+  ]
+}

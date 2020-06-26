@@ -1,0 +1,57 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-01-31T04:45:59.000Z",
+      "fileName": "contentassets/chartjslogo1.asset",
+      "fullName": "chartjslogo1",
+      "id": "03S6F000000GppVUAS",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-01-31T04:45:59.000Z",
+      "manageableState": "unmanaged",
+      "type": "ContentAsset"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2020-01-21T14:28:30.000Z",
+      "fileName": "contentassets/GetCloudyConsultingLogo.asset",
+      "fullName": "GetCloudyConsultingLogo",
+      "id": "03S6F000000kf6MUAQ",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2020-01-21T14:28:30.000Z",
+      "manageableState": "unmanaged",
+      "type": "ContentAsset"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-12-16T13:50:45.000Z",
+      "fileName": "contentassets/DreamhouseLogo.asset",
+      "fullName": "DreamhouseLogo",
+      "id": "03S6F000000kea1UAA",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-12-16T13:50:45.000Z",
+      "manageableState": "unmanaged",
+      "type": "ContentAsset"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-03-10T19:08:58.000Z",
+      "fileName": "contentassets/logo.asset",
+      "fullName": "logo",
+      "id": "03S6F000000HAB2UAO",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-03-10T19:08:58.000Z",
+      "manageableState": "unmanaged",
+      "type": "ContentAsset"
+    }
+  ]
+}

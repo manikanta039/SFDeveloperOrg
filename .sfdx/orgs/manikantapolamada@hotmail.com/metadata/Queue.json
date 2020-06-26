@@ -1,0 +1,41 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-11-26T14:25:31.000Z",
+      "fileName": "queues/Booyah.queue",
+      "fullName": "Booyah",
+      "id": "00G6F0000050gh0UAA",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-11-26T14:25:31.000Z",
+      "type": "Queue"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-11-26T14:13:07.000Z",
+      "fileName": "queues/Platinum_Support.queue",
+      "fullName": "Platinum_Support",
+      "id": "00G6F0000050ggvUAA",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-11-26T14:13:07.000Z",
+      "type": "Queue"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2020-01-22T07:33:21.000Z",
+      "fileName": "queues/Billing_Support_Agents.queue",
+      "fullName": "Billing_Support_Agents",
+      "id": "00G6F00000518WlUAI",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2020-01-22T07:33:21.000Z",
+      "type": "Queue"
+    }
+  ]
+}

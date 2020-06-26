@@ -1,0 +1,65 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-03-05T10:13:56.000Z",
+      "fileName": "connectedApps/Trailhead_Intro.connectedApp",
+      "fullName": "Trailhead_Intro",
+      "id": "09H6F0000000o6LUAQ",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-03-05T10:13:56.000Z",
+      "type": "ConnectedApp"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-02T10:37:14.000Z",
+      "fileName": "connectedApps/TestForNotifications.connectedApp",
+      "fullName": "TestForNotifications",
+      "id": "09H6F0000005hAVUAY",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-02T10:50:58.000Z",
+      "type": "ConnectedApp"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-03-05T10:11:15.000Z",
+      "fileName": "connectedApps/App.connectedApp",
+      "fullName": "App",
+      "id": "09H6F0000000o6GUAQ",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-03-05T10:11:15.000Z",
+      "type": "ConnectedApp"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-11-13T12:08:40.000Z",
+      "fileName": "connectedApps/ACS_India_Test.connectedApp",
+      "fullName": "ACS_India_Test",
+      "id": "09H6F000000l3EXUAY",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-11-13T12:08:40.000Z",
+      "type": "ConnectedApp"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-03-16T09:45:47.000Z",
+      "fileName": "connectedApps/Trailhead_Native_iOS.connectedApp",
+      "fullName": "Trailhead_Native_iOS",
+      "id": "09H6F000000XdgWUAS",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-03-16T09:45:47.000Z",
+      "type": "ConnectedApp"
+    }
+  ]
+}

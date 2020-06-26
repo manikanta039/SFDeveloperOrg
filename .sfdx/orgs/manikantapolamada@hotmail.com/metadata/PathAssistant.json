@@ -1,0 +1,31 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-11-18T06:50:49.000Z",
+      "fileName": "pathAssistants/Milestones.pathAssistant",
+      "fullName": "Milestones",
+      "id": "1CP6F000000kKRCWA2",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-11-18T07:05:21.000Z",
+      "manageableState": "unmanaged",
+      "type": "PathAssistant"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-01-03T05:50:28.000Z",
+      "fileName": "pathAssistants/test_path.pathAssistant",
+      "fullName": "test_path",
+      "id": "1CP6F000000PG9HWAW",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-01-03T05:50:36.000Z",
+      "manageableState": "unmanaged",
+      "type": "PathAssistant"
+    }
+  ]
+}

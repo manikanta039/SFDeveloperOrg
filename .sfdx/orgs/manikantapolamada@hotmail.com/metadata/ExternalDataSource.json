@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0056F000006zaCxQAI",
+    "createdByName": "Polamada Manikanta",
+    "createdDate": "2018-02-12T06:33:30.000Z",
+    "fileName": "dataSources/OrderDB.dataSource",
+    "fullName": "OrderDB",
+    "id": "0XC6F000000GnqaWAC",
+    "lastModifiedById": "0056F000006zaCxQAI",
+    "lastModifiedByName": "Polamada Manikanta",
+    "lastModifiedDate": "2018-02-12T06:34:22.000Z",
+    "manageableState": "unmanaged",
+    "type": "ExternalDataSource"
+  }
+}

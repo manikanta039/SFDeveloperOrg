@@ -1,0 +1,31 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:30:47.000Z",
+      "fileName": "navigationMenus/Default_Navigation1.navigationMenu",
+      "fullName": "Default_Navigation1",
+      "id": "0Lm6F0000004EEBSA2",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:30:47.000Z",
+      "manageableState": "unmanaged",
+      "type": "NavigationMenu"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:04:55.000Z",
+      "fileName": "navigationMenus/Default_Navigation.navigationMenu",
+      "fullName": "Default_Navigation",
+      "id": "0Lm6F0000004EE6SAM",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:04:55.000Z",
+      "manageableState": "unmanaged",
+      "type": "NavigationMenu"
+    }
+  ]
+}

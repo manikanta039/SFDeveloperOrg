@@ -1,0 +1,77 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:04:58.000Z",
+      "fileName": "userCriteria/Case Creation.Partner_and_Customer_members.userCriteria",
+      "fullName": "Case Creation.Partner_and_Customer_members",
+      "id": "0LV6F000000H1gSWAS",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:04:58.000Z",
+      "type": "UserCriteria"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:30:49.000Z",
+      "fileName": "userCriteria/Case Creation Demo.Partner_and_Customer_members.userCriteria",
+      "fullName": "Case Creation Demo.Partner_and_Customer_members",
+      "id": "0LV6F000000H1gXWAS",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:30:49.000Z",
+      "type": "UserCriteria"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:04:58.000Z",
+      "fileName": "userCriteria/Case Creation.Members_without_contribution.userCriteria",
+      "fullName": "Case Creation.Members_without_contribution",
+      "id": "0LV6F000000H1gRWAS",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:04:58.000Z",
+      "type": "UserCriteria"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:04:58.000Z",
+      "fileName": "userCriteria/Case Creation.Customer_Members.userCriteria",
+      "fullName": "Case Creation.Customer_Members",
+      "id": "0LV6F000000H1gQWAS",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:04:58.000Z",
+      "type": "UserCriteria"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:30:49.000Z",
+      "fileName": "userCriteria/Case Creation Demo.Customer_Members.userCriteria",
+      "fullName": "Case Creation Demo.Customer_Members",
+      "id": "0LV6F000000H1gVWAS",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:30:49.000Z",
+      "type": "UserCriteria"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:30:49.000Z",
+      "fileName": "userCriteria/Case Creation Demo.Members_without_contribution.userCriteria",
+      "fullName": "Case Creation Demo.Members_without_contribution",
+      "id": "0LV6F000000H1gWWAS",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:30:49.000Z",
+      "type": "UserCriteria"
+    }
+  ]
+}

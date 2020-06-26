@@ -1,0 +1,118 @@
+<apex:page controller="HierarchyController" showHeader="false" sidebar="false" lightningStylesheets="true">
+   <apex:slds />    
+    <head>
+        <title >Hierarchical Structure</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <style>
+            p{
+            font-weight: 900;
+            }
+        </style>
+    </head>
+    <script>
+    $(document).ready(function(){
+        /*      $("#b1").click(function(){
+            $("#parentul").toggle();
+        });
+        $("#parentb").click(function(){
+            if($("#childul").attr('class')=="slds-is-expanded"){
+                $("#childul").removeClass("slds-is-expanded");                    
+                $("#childul").addClass("slds-is-collapsed");                   
+                //$("#tree0-node0").attr('aria-expanded',false);
+            }else{                        
+                $("#childul").removeClass("slds-is-collapsed");                    
+                $("#childul").addClass("slds-is-expanded");                  
+                //$("#tree0-node0").attr('aria-expanded',true);
+            }
+        });
+        $("#childb").click(function(){
+            if($("#litchildul").attr('class')=="slds-is-expanded"){
+                $("#litchildul").removeClass("slds-is-expanded");                    
+                $("#litchildul").addClass("slds-is-collapsed");                   
+                $("#tree0-node0").attr('aria-expanded',false);
+            }else{                        
+                $("#litchildul").removeClass("slds-is-collapsed");                    
+                $("#litchildul").addClass("slds-is-expanded");                  
+                $("#tree0-node0").attr('aria-expanded',true);
+            }
+        });*/
+        
+        $('.b1').click(function(){
+            debugger;
+            $(event.target).closest('li').find('ul').toggle();
+		}); 
+    });
+    
+    </script>
+    
+    
+    <div class= "slds-page-header slds-align_absolute-center slds-theme_info">
+        <h1 class = "slds-page-header__title">
+            Hierarchical Structure of Places
+        </h1>
+    </div><br/>
+    
+    
+    <div Class="slds-tree_container ">
+        <ul class="slds-tree" role="tree" aria-labelledby="treeheading">
+            <li role="treeitem" aria-level="1" aria-expanded="true" aria-label="Tree Branch">
+                <div class="slds-tree__item">
+                    <button  class=" b1 slds-button slds-button_icon slds-button_icon slds-m-right_x-small" aria-hidden="true" tabindex="-1" title="Expand Tree Branch">
+
+                        <span class="slds-assistive-text">Expand Tree Branch</span>
+                        <p class="slds-p-around_xx-small slds-p-bottom_x-small">></p>
+                    </button>
+                    <span class="slds-truncate" title="Country"><apex:outputLink value="/{!place.ID}">{!place.Name}</apex:outputLink></span>
+                </div>
+                
+                <ul role="group" id="parentul" class="slds-is-expanded">
+                    <apex:repeat value="{!mainplace}" var="p"> 
+                        <li role="treeitem" aria-level="2" aria-selected="false">
+                            <div class="slds-tree__item">
+                                <button  class=" b1 slds-button slds-button_icon slds-button_icon slds-m-right_x-small" aria-hidden="true" tabindex="-1" title="Expand Tree Item">
+
+                                    <span class="slds-assistive-text">Expand Tree Item</span>
+                                    <p class="slds-p-around_xx-small slds-p-bottom_x-small">></p>
+                                </button>
+                                <span class="slds-truncate" title="State"><apex:outputLink value="/{!p.parent.ID}">{!p.parent.Name}</apex:outputLink></span>
+                            </div>
+                        
+                        <ul role="group2" id="childul" class="slds-is-expanded">
+                            <apex:repeat value="{!p.child}" var="ch">
+                                <li role="treeitem" aria-level="3" aria-selected="false">
+                                    <div class="slds-tree__item">
+                                        <button class="b1 slds-button slds-button_icon slds-button_icon slds-m-right_x-small" aria-hidden="true" tabindex="-1" title="Expand Tree Item">
+
+                                            <span class="slds-assistive-text">Expand Tree Item</span>
+                                            <p class="slds-p-around_xx-small slds-p-bottom_x-small">></p>
+                                        </button>
+                                        <span class="slds-truncate" title="District"><apex:outputLink value="/{!ch.ID}">{!ch.Name}</apex:outputLink></span>
+                                    </div>
+                                
+                                <ul role="group3" id="litchildul" class="slds-is-expanded">
+                                    <apex:repeat value="{!p.littleChild}" var="ch1">
+                                        <li role="treeitem" aria-level="4" aria-selected="false">
+                                            <div class="slds-tree__item">
+                                                <button class="slds-button slds-button_icon slds-button_icon slds-m-right_x-small slds-is-disabled" aria-hidden="true" tabindex="-1" title="Expand Tree Item">
+                                                    <svg class="slds-button__icon slds-button__icon_small" aria-hidden="true">
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevronright" />
+                                                    </svg>
+                                                    
+                                                </button>
+                                                <span class="slds-truncate" title="City"><apex:outputLink value="/{!ch1.ID}">{!ch1.Name}</apex:outputLink></span>
+                                            </div>
+                                        </li>
+                                    </apex:repeat>
+                                </ul></li>
+                            </apex:repeat>
+                        </ul>
+                            </li>
+                    </apex:repeat>  
+                    
+                </ul>
+                
+            </li>
+        </ul>
+    </div>
+</apex:page>

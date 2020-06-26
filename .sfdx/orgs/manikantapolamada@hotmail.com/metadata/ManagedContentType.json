@@ -1,0 +1,15 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0056F000006yQaTQAU",
+    "createdByName": "Automated Process",
+    "createdDate": "2020-02-16T05:24:25.000Z",
+    "fileName": "managedContentTypes/news.managedContentType",
+    "fullName": "news",
+    "id": "0T16F0000008peNSAQ",
+    "lastModifiedById": "0056F000006yQaTQAU",
+    "lastModifiedByName": "Automated Process",
+    "lastModifiedDate": "2020-02-16T05:24:25.000Z",
+    "type": "ManagedContentType"
+  }
+}

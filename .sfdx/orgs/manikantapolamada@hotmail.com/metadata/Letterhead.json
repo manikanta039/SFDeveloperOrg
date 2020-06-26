@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0056F000006zaCxQAI",
+    "createdByName": "Polamada Manikanta",
+    "createdDate": "2019-11-18T06:17:17.000Z",
+    "fileName": "letterhead/Sales.letter",
+    "fullName": "Sales",
+    "id": "0166F000000wnOKQAY",
+    "lastModifiedById": "0056F000006zaCxQAI",
+    "lastModifiedByName": "Polamada Manikanta",
+    "lastModifiedDate": "2019-11-18T06:17:42.000Z",
+    "manageableState": "unmanaged",
+    "type": "Letterhead"
+  }
+}

@@ -1,0 +1,21 @@
+<apex:page controller="TempHierarchy" >
+    <title>Organization Structure</title>
+<body>
+    <div align="center">
+        <h1>Organization Structure</h1>
+    </div>
+    <div align="center">
+        <table align="center">
+            <tr>
+                <td>
+                    <ul>
+                        <apex:repeat value="{!hierarchy}" var="h">
+                            <li><apex:outputLink value="{!h.ID}">{!h.Name}</apex:outputLink></li>
+                        </apex:repeat>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body> 
+</apex:page>

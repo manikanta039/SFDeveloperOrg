@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0056F000006zaCxQAI",
+    "createdByName": "Polamada Manikanta",
+    "createdDate": "2019-07-25T09:52:58.000Z",
+    "fileName": "documents/Salesforce_Branding_Resources",
+    "fullName": "Salesforce_Branding_Resources",
+    "id": "00l6F000002KFMAQA4",
+    "lastModifiedById": "0056F000006zaCxQAI",
+    "lastModifiedByName": "Polamada Manikanta",
+    "lastModifiedDate": "2019-07-25T09:52:58.000Z",
+    "manageableState": "unmanaged",
+    "type": "DocumentFolder"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-11-08T16:56:28.000Z",
+      "fileName": "email/Discount_Request_Responses",
+      "fullName": "Discount_Request_Responses",
+      "id": "00l6F000002KKI8QAO",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-11-08T16:56:28.000Z",
+      "manageableState": "unmanaged",
+      "type": "EmailFolder"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "1970-01-01T00:00:00.000Z",
+      "fileName": "unfiled$public",
+      "fullName": "unfiled$public",
+      "id": "",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "1970-01-01T00:00:00.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "",
+      "type": "EmailFolder"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-11-18T06:14:26.000Z",
+      "fileName": "email/Sales",
+      "fullName": "Sales",
+      "id": "00l6F000002KKhSQAW",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-11-18T06:14:26.000Z",
+      "manageableState": "unmanaged",
+      "type": "EmailFolder"
+    }
+  ]
+}

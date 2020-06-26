@@ -1,0 +1,29 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-11-20T04:46:14.000Z",
+      "fileName": "approvalProcesses/Opportunity.Discount_Approval_Process1.approvalProcess",
+      "fullName": "Opportunity.Discount_Approval_Process1",
+      "id": "04a6F000000kR2aQAE",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-11-20T04:50:53.000Z",
+      "type": "ApprovalProcess"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-11-08T17:16:49.000Z",
+      "fileName": "approvalProcesses/Opportunity.Discount_Approval_Process.approvalProcess",
+      "fullName": "Opportunity.Discount_Approval_Process",
+      "id": "04a6F000000kQy9QAE",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-11-20T04:45:46.000Z",
+      "type": "ApprovalProcess"
+    }
+  ]
+}

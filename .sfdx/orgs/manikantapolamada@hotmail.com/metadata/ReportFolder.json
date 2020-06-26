@@ -1,0 +1,84 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2020-01-16T06:39:44.000Z",
+      "fileName": "reports/AdoptionReports",
+      "fullName": "AdoptionReports",
+      "id": "00l6F000002KNJPQA4",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2020-01-16T06:39:44.000Z",
+      "manageableState": "unmanaged",
+      "type": "ReportFolder"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2020-01-16T06:38:59.000Z",
+      "fileName": "reports/AdminLightningExperienceReports",
+      "fullName": "AdminLightningExperienceReports",
+      "id": "00l6F000002KNJFQA4",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2020-01-16T06:38:59.000Z",
+      "manageableState": "unmanaged",
+      "type": "ReportFolder"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2020-01-16T06:39:29.000Z",
+      "fileName": "reports/MarketingReports",
+      "fullName": "MarketingReports",
+      "id": "00l6F000002KNJKQA4",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2020-01-16T06:39:29.000Z",
+      "manageableState": "unmanaged",
+      "type": "ReportFolder"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-11-26T11:44:26.000Z",
+      "fileName": "reports/Expenses",
+      "fullName": "Expenses",
+      "id": "00l6F000002KLC1QAO",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-11-26T11:44:26.000Z",
+      "manageableState": "unmanaged",
+      "type": "ReportFolder"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "1970-01-01T00:00:00.000Z",
+      "fileName": "unfiled$public",
+      "fullName": "unfiled$public",
+      "id": "",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "1970-01-01T00:00:00.000Z",
+      "manageableState": "unmanaged",
+      "namespacePrefix": "",
+      "type": "ReportFolder"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2020-01-16T06:35:48.000Z",
+      "fileName": "reports/GlobalSalesReports",
+      "fullName": "GlobalSalesReports",
+      "id": "00l6F000002KNJAQA4",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2020-01-16T06:35:48.000Z",
+      "manageableState": "unmanaged",
+      "type": "ReportFolder"
+    }
+  ]
+}

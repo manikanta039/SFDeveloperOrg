@@ -1,0 +1,44 @@
+<template>
+    <lightning-card title="Hello world" padding="around-small">
+        <div>
+            <lightning-input label = "first Name" name="fName" onchange={handleName}> 
+
+            </lightning-input>
+            <lightning-input label = "Last Name" name="lName" onchange={handleName}> 
+
+            </lightning-input>
+            <lightning-input type="checkbox" onchange={displayName}></lightning-input>
+        </div>
+        <template if:true={isActive}>
+        <div><p>Hello! {fname}, {lname}</p></div>
+        </template>
+        <template for:each={namearray} for:item="name">
+            {name}, &nbsp;
+        </template>
+    </br>
+        <template iterator:name={namearray}>
+            <div if:false={name.last} key={name.value}> {name.value}, &nbsp;</div>
+            
+            <div if:true={name.last} key={name.value}> {name.value} </div>
+        </template>
+    </lightning-card>
+
+    <lightning-card title="Calculator">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item padding="around-small" size=12>
+                <lightning-input label="First Number" name="x" onchange={compute}></lightning-input>
+                <lightning-input label="Last Number" name="y" onchange={compute}></lightning-input>
+                <c-calculator-result calculated-result={result}></c-calculator-result>
+                <lightning-button-group>
+                    <lightning-button name="Add" label="+" onclick={calculate}></lightning-button>
+                    <lightning-button name="Substract" label="-" onclick={calculate}></lightning-button>
+                    <lightning-button name="Multiply" label="*" onclick={calculate}></lightning-button>
+                    <lightning-button name="Divide" label="/" onclick={calculate}></lightning-button>
+                </lightning-button-group>
+            </lightning-layout-item>
+            <lightning-layout-item size=12>
+                
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

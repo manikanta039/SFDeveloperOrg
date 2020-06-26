@@ -1,0 +1,96 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-03-22T11:23:00.000Z",
+      "fileName": "remoteSiteSettings/Einstein_AI.remoteSite",
+      "fullName": "Einstein_AI",
+      "id": "0rp6F000000g31BQAQ",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-03-22T11:23:00.000Z",
+      "manageableState": "unmanaged",
+      "type": "RemoteSiteSetting"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-11-30T12:38:47.000Z",
+      "fileName": "remoteSiteSettings/MOTOG.remoteSite",
+      "fullName": "MOTOG",
+      "id": "0rp6F000000t0DaQAI",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-11-30T12:38:47.000Z",
+      "manageableState": "unmanaged",
+      "type": "RemoteSiteSetting"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2020-02-12T13:06:30.000Z",
+      "fileName": "remoteSiteSettings/calculatorServices.remoteSite",
+      "fullName": "calculatorServices",
+      "id": "0rp6F000000t1OAQAY",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2020-02-12T13:06:30.000Z",
+      "manageableState": "unmanaged",
+      "type": "RemoteSiteSetting"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-10-30T16:54:19.000Z",
+      "fileName": "remoteSiteSettings/animals_soap.remoteSite",
+      "fullName": "animals_soap",
+      "id": "0rp6F000000szMRQAY",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-10-30T16:54:19.000Z",
+      "manageableState": "unmanaged",
+      "type": "RemoteSiteSetting"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2017-12-20T05:32:45.000Z",
+      "fileName": "remoteSiteSettings/YelpProxy.remoteSite",
+      "fullName": "YelpProxy",
+      "id": "0rp6F0000009MzhQAE",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2017-12-20T05:32:45.000Z",
+      "manageableState": "unmanaged",
+      "type": "RemoteSiteSetting"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2019-10-30T16:53:39.000Z",
+      "fileName": "remoteSiteSettings/animals_http.remoteSite",
+      "fullName": "animals_http",
+      "id": "0rp6F000000szMMQAY",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2019-10-30T16:53:39.000Z",
+      "manageableState": "unmanaged",
+      "type": "RemoteSiteSetting"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2017-03-08T04:56:51.000Z",
+      "fileName": "remoteSiteSettings/ApexDevNet.remoteSite",
+      "fullName": "ApexDevNet",
+      "id": "0rp6F000000yZOEQA2",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2017-03-08T04:56:51.000Z",
+      "manageableState": "unmanaged",
+      "type": "RemoteSiteSetting"
+    }
+  ]
+}

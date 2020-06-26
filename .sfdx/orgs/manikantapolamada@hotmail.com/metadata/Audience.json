@@ -1,0 +1,41 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:04:56.000Z",
+      "fileName": "audience/Default.audience",
+      "fullName": "Default",
+      "id": "6Au6F000000L02hSAC",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:04:56.000Z",
+      "type": "Audience"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:28:42.000Z",
+      "fileName": "audience/Case_AUdience.audience",
+      "fullName": "Case_AUdience",
+      "id": "6Au6F000000L02mSAC",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:28:42.000Z",
+      "type": "Audience"
+    },
+    {
+      "createdById": "0056F000006zaCxQAI",
+      "createdByName": "Polamada Manikanta",
+      "createdDate": "2018-07-19T14:30:48.000Z",
+      "fileName": "audience/Default1.audience",
+      "fullName": "Default1",
+      "id": "6Au6F000000L02rSAC",
+      "lastModifiedById": "0056F000006zaCxQAI",
+      "lastModifiedByName": "Polamada Manikanta",
+      "lastModifiedDate": "2018-07-19T14:30:48.000Z",
+      "type": "Audience"
+    }
+  ]
+}
