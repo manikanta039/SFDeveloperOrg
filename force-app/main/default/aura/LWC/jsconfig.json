@@ -1,0 +1,80 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/accountModal": [
+                "../../lwc/accountModal/accountModal.js"
+            ],
+            "c/bikeCard": [
+                "../../lwc/bikeCard/bikeCard.js"
+            ],
+            "c/calculator": [
+                "../../lwc/calculator/calculator.js"
+            ],
+            "c/calculatorResult": [
+                "../../lwc/calculatorResult/calculatorResult.js"
+            ],
+            "c/dynamicMsg": [
+                "../../lwc/dynamicMsg/dynamicMsg.js"
+            ],
+            "c/helloWorld": [
+                "../../lwc/helloWorld/helloWorld.js"
+            ],
+            "c/inlineMessage": [
+                "../../lwc/inlineMessage/inlineMessage.js"
+            ],
+            "c/ldsUtils": [
+                "../../lwc/ldsUtils/ldsUtils.js"
+            ],
+            "c/listOfAccounts": [
+                "../../lwc/listOfAccounts/listOfAccounts.js"
+            ],
+            "c/myComponent": [
+                "../../lwc/myComponent/myComponent.js"
+            ],
+            "c/orderBuilder": [
+                "../../lwc/orderBuilder/orderBuilder.js"
+            ],
+            "c/orderItemTile": [
+                "../../lwc/orderItemTile/orderItemTile.js"
+            ],
+            "c/paginator": [
+                "../../lwc/paginator/paginator.js"
+            ],
+            "c/placeholder": [
+                "../../lwc/placeholder/placeholder.js"
+            ],
+            "c/productCard": [
+                "../../lwc/productCard/productCard.js"
+            ],
+            "c/productFilter": [
+                "../../lwc/productFilter/productFilter.js"
+            ],
+            "c/productListItem": [
+                "../../lwc/productListItem/productListItem.js"
+            ],
+            "c/productTile": [
+                "../../lwc/productTile/productTile.js"
+            ],
+            "c/productTileList": [
+                "../../lwc/productTileList/productTileList.js"
+            ],
+            "c/pubsub": [
+                "../../lwc/pubsub/pubsub.js"
+            ],
+            "c/similarProducts": [
+                "../../lwc/similarProducts/similarProducts.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

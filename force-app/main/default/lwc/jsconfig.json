@@ -62,6 +62,9 @@
             ],
             "c/similarProducts": [
                 "similarProducts/similarProducts.js"
+            ],
+            "c/dynamicMsg": [
+                "dynamicMsg/dynamicMsg.js"
             ]
         }
     },
