@@ -65,6 +65,24 @@
             ],
             "c/dynamicMsg": [
                 "dynamicMsg/dynamicMsg.js"
+            ],
+            "c/contactCreator": [
+                "contactCreator/contactCreator.js"
+            ],
+            "c/contactList": [
+                "contactList/contactList.js"
+            ],
+            "c/boatSearch": [
+                "boatSearch/boatSearch.js"
+            ],
+            "c/boatSearchForm": [
+                "boatSearchForm/boatSearchForm.js"
+            ],
+            "c/boatTile": [
+                "boatTile/boatTile.js"
+            ],
+            "c/boatSearchResults": [
+                "boatSearchResults/boatSearchResults.js"
             ]
         }
     },

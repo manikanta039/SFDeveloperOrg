@@ -508,5 +508,67 @@
         "component://c/dynamicMsg@en-IN": {
             "dev": "c5a59e3ccc"
         }
+    },
+    "ac99665002": {
+        "component://c/calculator@en-IN": {
+            "dev": "ebf600f414"
+        },
+        "component://@webruntime/app@en-IN": {
+            "dev": "3917909a35"
+        },
+        "component://c/calculatorResult@en-IN": {
+            "dev": "2dbb9370fe"
+        },
+        "component://localdevserver/preview@en-IN": {
+            "dev": "1adcc89400"
+        },
+        "component://c/dynamicMsg@en-IN": {
+            "dev": "c5a59e3ccc"
+        },
+        "component://localdevserver/home@en-IN": {
+            "dev": "c0efafa63a"
+        },
+        "component://c/bikeCard@en-IN": {
+            "dev": "053bc14cc2"
+        },
+        "component://c/listOfAccounts@en-IN": {
+            "dev": "2090e254db"
+        },
+        "component://c/accountModal@en-IN": {
+            "dev": "804be0767d"
+        },
+        "component://c/orderBuilder@en-IN": {
+            "dev": "746aa6d972"
+        },
+        "component://c/ldsUtils@en-IN": {
+            "dev": "b9c8ef5e49"
+        },
+        "component://c/placeholder@en-IN": {
+            "dev": "3f78d3649a"
+        },
+        "component://c/inlineMessage@en-IN": {
+            "dev": "235d52b14b"
+        },
+        "component://c/orderItemTile@en-IN": {
+            "dev": "938a681ebb"
+        },
+        "component://c/productCard@en-IN": {
+            "dev": "6b75d5aac4"
+        },
+        "component://c/pubsub@en-IN": {
+            "dev": "d2575593d6"
+        },
+        "component://c/productFilter@en-IN": {
+            "dev": "d186d5ab01"
+        },
+        "component://c/productTileList@en-IN": {
+            "dev": "a6936bd0e7"
+        },
+        "component://c/productTile@en-IN": {
+            "dev": "307e8d026d"
+        },
+        "component://c/paginator@en-IN": {
+            "dev": "25b60b5406"
+        }
     }
 }

@@ -65,6 +65,24 @@
             ],
             "c/similarProducts": [
                 "../../lwc/similarProducts/similarProducts.js"
+            ],
+            "c/contactCreator": [
+                "../../lwc/contactCreator/contactCreator.js"
+            ],
+            "c/contactList": [
+                "../../lwc/contactList/contactList.js"
+            ],
+            "c/boatSearch": [
+                "../../lwc/boatSearch/boatSearch.js"
+            ],
+            "c/boatSearchForm": [
+                "../../lwc/boatSearchForm/boatSearchForm.js"
+            ],
+            "c/boatTile": [
+                "../../lwc/boatTile/boatTile.js"
+            ],
+            "c/boatSearchResults": [
+                "../../lwc/boatSearchResults/boatSearchResults.js"
             ]
         }
     },
