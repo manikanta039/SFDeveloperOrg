@@ -1,5 +1,7 @@
 import { LightningElement, track } from 'lwc';
-
+import leafletResource from '@salesforce/resourceUrl/lottiePlayer';
+import { loadScript, loadStyle } from 'lightning/platformResourceLoader';
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 export default class Calculator extends LightningElement {
     fname
     lname
@@ -8,6 +10,35 @@ export default class Calculator extends LightningElement {
     valueX
     valueY
     result
+    @track error;
+    @track successMessage = 'loading...';
+
+    renderedCallback() {
+        console.log('abc1'+JSON.stringify(leafletResource));
+        //Promise.all(
+            loadScript(this, leafletResource+ '/lottie-player.js')
+        .then(() => { 
+            this.error = undefined;
+            // Call back function if scripts loaded successfully
+            this.showSuccessMessage();
+        })
+        .catch(error => {
+            this.error = error;
+            console.log('abc'+JSON.stringify(error));
+            this.dispatchEvent(
+                new ShowToastEvent({
+                    title: 'Error!!',
+                    message: error,
+                    variant: 'error',
+                }),
+            );
+        });
+       
+    }
+    showSuccessMessage() { // call back method 
+       this.successMessage = 'Scripts are loaded successfully!!';
+    }
+    
 
     handleName(event){
         if(event.target.name == "fName")

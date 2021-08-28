@@ -1,5 +1,8 @@
 import { LightningElement, wire } from 'lwc';
 import getBoats from '@salesforce/apex/BoatDataService.getBoats';
+import BOATMC from '@salesforce/messageChannel/BoatMessageChannel__c';
+import {publish, MessageContext} from 'lightning/messageService'
+
 
 const SUCCESS_TITLE = 'Success';
 const MESSAGE_SHIP_IT     = 'Ship it!';
@@ -20,7 +23,9 @@ export default class BoatSearchResults extends LightningElement {
     isLoading = false;
     
     // wired message context
+    @wire(MessageContext)
     messageContext;
+    
     // wired getBoats method 
     @wire(getBoats, { boatTypeId: '$boatTypeId' })
     wiredBoats(result) { 
@@ -42,20 +47,22 @@ export default class BoatSearchResults extends LightningElement {
     refresh() { }
     
     // this function must update selectedBoatId and call sendMessageService
-    updateSelectedTile() {
-        this.selectedBoatId = event.detail.boatId;
+    updateSelectedTile(event) {
+        this.selectedBoatId = event.detail;
         this.sendMessageService(this.selectedBoatId);
     }
     
     // Publishes the selected boat Id on the BoatMC.
     sendMessageService(boatId) { 
       // explicitly pass boatId to the parameter recordId
+      var message = {recordId : boatId};
+      publish(this.messageContext, BOATMC, message);
     }
     
     // This method must save the changes in the Boat Editor
     // Show a toast message with the title
     // clear lightning-datatable draft values
-    handleSave() {
+    handleSave(event) {
       const recordInputs = event.detail.draftValues.slice().map(draft => {
           const fields = Object.assign({}, draft);
           return { fields };
