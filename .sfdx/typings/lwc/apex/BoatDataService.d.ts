@@ -13,3 +13,6 @@ declare module "@salesforce/apex/BoatDataService.getAllReviews" {
 declare module "@salesforce/apex/BoatDataService.getBoatsByLocation" {
   export default function getBoatsByLocation(param: {latitude: any, longitude: any, boatTypeId: any}): Promise<any>;
 }
+declare module "@salesforce/apex/BoatDataService.updateBoatList" {
+  export default function updateBoatList(param: {data: any}): Promise<any>;
+}

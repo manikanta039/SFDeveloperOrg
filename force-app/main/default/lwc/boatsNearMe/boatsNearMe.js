@@ -1,5 +1,6 @@
 import { LightningElement, wire, api } from 'lwc';
 import getBoatsByLocation from '@salesforce/apex/BoatDataService.getBoatsByLocation';
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 const LABEL_YOU_ARE_HERE = 'You are here!';
 const ICON_STANDARD_USER = 'standard:user';
@@ -12,6 +13,7 @@ export default class BoatsNearMe extends LightningElement {
     isRendered;
     latitude;
     longitude;
+    isLoading = true;
 
     // Controls the isRendered property
     // Calls getLocationFromBrowser()
